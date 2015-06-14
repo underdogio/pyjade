@@ -327,7 +327,6 @@ class Parser(object):
             if tag.textOnly:
                 self.lexer.pipeless = True
                 tag.block = self.parseTextBlock(tag)
-                print tag.block
                 self.lexer.pipeless = False
             else:
                 block = self.block()
